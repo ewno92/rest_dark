@@ -1,8 +1,14 @@
 import React from "react";
-// import styles from "../styles/Layout.module.css";
-
+// import "../styles/Layout.module.scss";
+// import styles "../styles/Nav";
+import Sidebar from "./Sidebar";
 const Layout = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <Sidebar />
+      {children}
+    </div>
+  );
 };
 
 export default Layout;
