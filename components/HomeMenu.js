@@ -1,6 +1,8 @@
 import React from "react";
 
-const HomeMenu = () => {
+const HomeMenu = (props) => {
+  const path = props.path;
+  console.log(path);
   return (
     <div id="homeMenu">
       <div className="home-container">
@@ -14,7 +16,7 @@ const HomeMenu = () => {
           <span className="menu-name"> seasfood noodles</span>
 
           <span className="price">$ {2.29}</span>
-          <span className="availability">20 Bowls available</span>
+          <span className="availability">{20} Bowls available</span>
         </div>
       </div>
     </div>

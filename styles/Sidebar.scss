@@ -16,7 +16,50 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    .icon {
+      width: 56px;
+      height: 56px;
+      // background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      transition: 0.3s;
+      svg {
+        fill: #ea7c69;
+        transition: 0.4s;
+      }
+    }
+    div.icon.active {
+      background-color: #ea7c69;
+      cursor: pointer;
+      position: relative;
+      svg {
+        // color: white;
+        fill: white;
+        width: 34px;
+        height: 34px;
+      }
+      .bg {
+        position: absolute;
+        width: 92px;
+        height: 80px;
+        left: 0px;
+        top: 10px;
+        background-color: #252836;
+        z-index: 0;
+      }
+    }
+    .icon:hover {
+      background-color: #ea7c69;
+      cursor: pointer;
+      svg {
+        // color: white;
+        fill: white;
+        width: 34px;
+        height: 34px;
+      }
+    }
     // svg {WW
     //   margin-top: 20px;
     // }

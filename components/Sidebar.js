@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import {
   Restaurant,
   Home,
@@ -12,25 +13,44 @@ import {
 } from "./../components/icons/svgs";
 
 const Sidebar = () => {
+  const router = useRouter();
+  const path = router.pathname;
+  console.log(path);
+
   return (
     <nav id="sidebar">
       <div className="icon-container">
         <Link href="/">
-          <a>
+          <div className={`icon ${path === "/" ? "active" : ""}`}>
             <Restaurant />
-          </a>
+          </div>
         </Link>
         <Link href="/home">
-          <a>
+          <div className={`icon ${path === "/home" ? "active" : ""}`}>
             <Home />
-          </a>
+            {/* <div className="bg"></div> */}
+          </div>
         </Link>
-        <Discount />
-        <Dashboard />
-        <Card />
-        <Notification />
-        <Setting />
-        <LogOut />
+
+        <div className="icon">
+          <Discount />
+        </div>
+
+        <div className="icon">
+          <Dashboard />
+        </div>
+        <div className="icon">
+          <Card />
+        </div>
+        <div className="icon">
+          <Notification />
+        </div>
+        <div className="icon">
+          <Setting />
+        </div>
+        <div className="icon">
+          <LogOut />
+        </div>
       </div>
     </nav>
   );
