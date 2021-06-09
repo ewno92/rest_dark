@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   Restaurant,
   Home,
@@ -14,8 +15,16 @@ const Sidebar = () => {
   return (
     <nav id="sidebar">
       <div className="icon-container">
-        <Restaurant />
-        <Home />
+        <Link href="/">
+          <a>
+            <Restaurant />
+          </a>
+        </Link>
+        <Link href="/home">
+          <a>
+            <Home />
+          </a>
+        </Link>
         <Discount />
         <Dashboard />
         <Card />

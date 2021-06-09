@@ -1,17 +1,24 @@
 #sidebar {
   width: 104px;
-  height: 834px;
+  height: 100vh;
   background: #1f1d2b;
 
   .icon-container {
     margin-left: auto;
     margin-right: auto;
+    padding: 35px 0 35px 0;
     // background-color: white;
     width: 70px;
-
+    height: 100vh;
+    min-height: 400px;
+    max-height: 834px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+
+    // svg {WW
+    //   margin-top: 20px;
+    // }
   }
 }

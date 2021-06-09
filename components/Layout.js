@@ -4,7 +4,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div id="layout">
       <Sidebar />
       {children}
     </div>

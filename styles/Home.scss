@@ -1,0 +1,14 @@
+#home {
+  padding-top: 24px;
+  padding-left: 30px;
+  background-color: #252836;
+  width: calc(100vw - 80px);
+  .name {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+  }
+  .timeStamp {
+    color: #e0e6e9;
+  }
+}

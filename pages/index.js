@@ -5,7 +5,6 @@ import styles from "../styles/Home.module.scss";
 export default function Home() {
   return (
     <div className={styles.container}>
-      hello
       <Head>
         <title>this is head</title>
       </Head>
