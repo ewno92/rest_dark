@@ -28,7 +28,6 @@ const Sidebar = () => {
         <Link href="/home">
           <div className={`icon ${path === "/home" ? "active" : ""}`}>
             <Home />
-            {/* <div className="bg"></div> */}
           </div>
         </Link>
 
@@ -45,9 +44,13 @@ const Sidebar = () => {
         <div className="icon">
           <Notification />
         </div>
-        <div className="icon">
-          <Setting />
-        </div>
+
+        <Link href="/setting">
+          <div className={`icon ${path === "/setting" ? "active" : ""}`}>
+            <Setting />
+          </div>
+        </Link>
+
         <div className="icon">
           <LogOut />
         </div>
