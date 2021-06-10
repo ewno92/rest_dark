@@ -1,12 +1,23 @@
 import React from "react";
-import Tabs from "react-bootstrap/Tabs";
+// import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import { Row, Col, Nav } from "react-bootstrap";
+import {
+  Restaurant,
+  Home,
+  Discount,
+  Dashboard,
+  Card,
+  Notification,
+  Setting,
+  LogOut,
+} from "./../components/icons/svgs";
 
 const Settings = () => {
   return (
     <div id="settings">
       <h1>Settings</h1>
+
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
           <Col sm={3} className="tabs">

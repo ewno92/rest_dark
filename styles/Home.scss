@@ -9,16 +9,21 @@
   .header {
     display: flex;
     justify-content: space-between;
-    max-width: 1300px;
+    max-width: 633px;
+    margin-bottom: 24px;
     .name-time-container {
       .name {
-        font-size: 28px;
         color: white;
         font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        margin-bottom: 4px;
       }
-      .timeStamp {
+      .time-stamp {
+        font-size: 16px;
+        line-height: 140%;
+
         color: #e0e6e9;
-        display: block;
       }
     }
     .search-container {
@@ -39,30 +44,37 @@
 
   .item-container {
     display: flex;
-    width: 1000px;
-    height: 2000px;
+    // width: 80vw;
+    // max-width: 1000px;
     align-content: space-around;
-    background-color: white;
+    margin: 0;
+    // background-color: white;
     flex-direction: row;
     #homeMenu {
       margin-right: 10px;
     }
   }
+
   .menu-tabs {
     .nav-item.nav-link.active {
-      color: #ea7c69;
+      font-size: 14px;
       font-weight: 600;
+      color: #ea7c69;
+      border: none;
     }
     border: none;
     .nav-item.nav-link {
-      color: white;
+      font-size: 14px;
       font-weight: 600;
+      color: white;
+      border: none;
     }
 
     .nav-tabs .nav-link.active,
     .nav-tabs .nav-item.show .nav-link {
       background-color: transparent;
       border-bottom: 4px solid;
+      // transition: 2s;
       // border: none;
     }
 

@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col, Nav } from "react-bootstrap";
-const dashboard = () => {
+import { Coin, ArrowDown } from "./../components/icons/dashboardSvg";
+
+const Dashboard = () => {
   return (
     <div id="dashboard">
       <div className="top-container">
@@ -9,12 +11,26 @@ const dashboard = () => {
       </div>
 
       <Row className="summary-container">
-        <div className="revenue"></div>
-        <div className="ordered"></div>
-        <div className="customer"></div>
+        <div className="card">
+          <div className="card-top">
+            <div className="icon-container">
+              <Coin />
+            </div>
+            <span className="percentage">+32.59%</span>
+            <div className="arrow-container">
+              <ArrowDown />
+            </div>
+          </div>
+
+          <span className="number">$ 10,243.00</span>
+          <span className="name">Total Revenue</span>
+        </div>
+
+        <div className="card"></div>
+        <div className="card"></div>
       </Row>
     </div>
   );
 };
 
-export default dashboard;
+export default Dashboard;

@@ -2,8 +2,7 @@ import React from "react";
 import HomeMenu from "./../components/HomeMenu";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import { Search } from "./../components/icons/svgs";
-import { hotDish } from "./../components/data";
+import { hotDish, coldDish } from "./../components/data";
 import { Col, Row } from "react-bootstrap";
 const Home = () => {
   // const menu = { name: "udon", category: "hot dish" };
@@ -14,10 +13,9 @@ const Home = () => {
     <div id="home">
       <div className="header">
         <div className="name-time-container">
-          <span className="name">JaeGar Resto</span>
-          <a className="timeStamp">Tuesday, 2 Feb 2021</a>
+          <h1 className="name">JaeGar Resto</h1>
+          <span className="time-stamp">Tuesday, 2 Feb 2021</span>
         </div>
-        <Search />
         <div className="search-container">
           <input type="text" placeholder="Search for food, coffee, etc..." />
         </div>
@@ -38,7 +36,7 @@ const Home = () => {
               availability={9}
               img="https://cdn.pixabay.com/photo/2017/01/07/20/40/candies-1961536_960_720.jpg"
             /> */}
-            <div className="item-container">
+            <Row className="item-container">
               {hotDish.map((item, i) => (
                 <HomeMenu
                   first={item.first}
@@ -49,10 +47,21 @@ const Home = () => {
                   key={i}
                 />
               ))}
-            </div>
+            </Row>
           </Tab>
           <Tab eventKey="Cold Dishes" title="Cold Dishes">
-            <HomeMenu /> <HomeMenu />
+            <Row className="item-container">
+              {coldDish.map((item, i) => (
+                <HomeMenu
+                  first={item.first}
+                  second={item.second}
+                  price={item.price}
+                  availability={item.availability}
+                  img={item.img}
+                  key={i}
+                />
+              ))}
+            </Row>
           </Tab>
           <Tab eventKey="Soup" title="Soup">
             abdf
