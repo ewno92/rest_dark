@@ -1,0 +1,50 @@
+#dashboard {
+  background-color: #252836;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 0 0 128px;
+
+  .top-container {
+    width: 646px;
+    height: 113px;
+    border-bottom: 1px solid #393c49;
+
+    .heading {
+      font-weight: 600;
+      color: white;
+      line-height: 140%;
+      margin: 0;
+    }
+    .time-stamp {
+      color: #abbbc2;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  .summary-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 645px;
+    .revenue {
+      height: 143px;
+      width: 199px;
+      border-radius: 8px;
+      background: #1f1d2b;
+    }
+    .ordered {
+      height: 143px;
+      width: 199px;
+      border-radius: 8px;
+      background: #1f1d2b;
+    }
+    .customer {
+      height: 143px;
+      width: 199px;
+      border-radius: 8px;
+      background: #1f1d2b;
+    }
+  }
+}

@@ -35,9 +35,12 @@ const Sidebar = () => {
           <Discount />
         </div>
 
-        <div className="icon">
-          <Dashboard />
-        </div>
+        <Link href="/dashboard">
+          <div className="icon">
+            <Dashboard />
+          </div>
+        </Link>
+
         <div className="icon">
           <Card />
         </div>
