@@ -1,83 +1,129 @@
 #dashboard {
   background-color: #252836;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  padding: 24px 0 0 128px;
 
-  .top-container {
-    width: 646px;
-    height: 113px;
-    border-bottom: 1px solid #393c49;
+  // width: 100vw;
+  // height: 2000px;
 
-    .heading {
-      font-weight: 600;
-      color: white;
-      line-height: 140%;
-      margin: 0;
+  display: flex;
+
+  .main-container {
+    // margin-right: 25px;
+    .top-container {
+      // width: 636px;
+      // height: 113px;
+      border-bottom: 1px solid #393c49;
+      // border-bottom: px solid white;
+
+      .heading {
+        font-weight: 600;
+        color: white;
+        line-height: 140%;
+        margin: 0;
+      }
+      .time-stamp {
+        color: #abbbc2;
+        font-size: 16px;
+        line-height: 140%;
+      }
     }
-    .time-stamp {
-      color: #abbbc2;
-      font-size: 16px;
-      line-height: 140%;
+
+    .summary-container {
+      margin: 24px 0 0 0;
+
+      // display: flex;
+      // justify-content: space-between;
+      .card {
+        padding: 0;
+        height: 143px;
+        // max-width: 199px;
+        // min-width: 199px;
+        border-radius: 8px;
+        background: #1f1d2b;
+        width: 100%;
+        // display: flex;
+        // justify-content: space-between;
+        .card-top {
+          display: flex;
+          // background-color: white;
+          .icon-container {
+            margin: 16px 0 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background: #252836;
+            border-radius: 8px;
+          }
+          .percentage {
+            margin: 26.5px 6px 0 12px;
+            font-weight: 500;
+            font-size: 12px;
+            color: #50d1aa;
+          }
+          .arrowUp-container {
+            width: 18px;
+            height: 18px;
+            background: rgba(136, 224, 145, 0.24);
+            font-size: 30px;
+            margin-top: 26px;
+            border-radius: 50%;
+            position: relative;
+            svg {
+              position: absolute;
+              top: -11px;
+              left: 4px;
+              height: 40px;
+            }
+          }
+          .arrowDown-container {
+            width: 18px;
+            height: 18px;
+            background: rgba(255, 100, 113, 0.24);
+            font-size: 30px;
+            margin-top: 26px;
+            border-radius: 50%;
+            position: relative;
+            svg {
+              position: absolute;
+              top: -11px;
+              left: 4px;
+              height: 40px;
+            }
+          }
+        }
+        .number {
+          margin-left: 16px;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 140%;
+          color: white;
+        }
+        .name {
+          margin: 0 0 16px 16px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 130%;
+          color: #abbbc2;
+        }
+      }
     }
   }
 
-  .summary-container {
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 645px;
-    .card {
-      padding: 0;
-      height: 143px;
-      width: 199px;
-      border-radius: 8px;
+  .side-container {
+    // background: white;
+    .most-ordered {
+      width: 100%;
+      height: 429px;
       background: #1f1d2b;
-      display: flex;
-      justify-content: space-between;
-      .card-top {
-        display: flex;
-        // background-color: white;
-        .icon-container {
-          margin: 16px 0 0 16px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 38px;
-          height: 38px;
-          background: #252836;
-          border-radius: 8px;
-        }
-        .percentage {
-          margin: 26.5px 6px 0 12px;
-          font-weight: 500;
-          font-size: 12px;
-          color: #50d1aa;
-        }
-        .arrow-container {
-          width: 18px;
-          height: 18px;
-          background: rgba(136, 224, 145, 0.24);
-          font-size: 30px;
-          margin-top: 26px;
-          border-radius: 50%;
-        }
-      }
-      .number {
-        margin-left: 16px;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 140%;
-        color: white;
-      }
-      .name {
-        margin: 0 0 16px 16px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 130%;
-        color: #abbbc2;
-      }
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+    .most-type-ordered {
+      // width: 372px;
+      height: 429px;
+      background: #1f1d2b;
+      border-radius: 8px;
     }
   }
 }

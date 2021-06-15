@@ -36,7 +36,7 @@ const Sidebar = () => {
         </div>
 
         <Link href="/dashboard">
-          <div className="icon">
+          <div className={`icon ${path === "/dashboard" ? "active" : ""}`}>
             <Dashboard />
           </div>
         </Link>
