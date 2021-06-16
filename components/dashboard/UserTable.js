@@ -1,12 +1,37 @@
-import React from "react";
-
-const UserTable = () => {
+const Completed = () => {
   return (
-    <div>
-      <table class="table table-dark">
+    <div id="bt-completed">
+      <span>Completed</span>
+    </div>
+  );
+};
+const Pending = () => {
+  return (
+    <div id="bt-pending">
+      <span>Pending</span>
+    </div>
+  );
+};
+const Preparing = () => {
+  return (
+    <div id="bt-preparing">
+      <span>Preparing</span>
+    </div>
+  );
+};
+
+const UserTable = (UserData) => {
+  return (
+    <div id="user-table">
+      {console.log(UserData)}
+      <h1>{UserData.firstName}</h1>
+      <table className="table table-dark">
         <thead>
           <tr>
-            <th scope="col">Customer</th>
+            <th scope="col">
+              Customer
+              <h1>{UserData[0]}</h1>
+            </th>
             <th scope="col">Menu</th>
             <th scope="col">Total Payment</th>
             <th scope="col">Status</th>
@@ -17,19 +42,25 @@ const UserTable = () => {
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
-            <td>@mdo</td>
+            <td>
+              <Preparing />
+            </td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
-            <td>@fat</td>
+            <td>
+              <Pending />
+            </td>
           </tr>
           <tr>
             <th scope="row">3</th>
             <td>Larry</td>
             <td>the Bird</td>
-            <td>@twitter</td>
+            <td>
+              <Completed />
+            </td>
           </tr>
         </tbody>
       </table>

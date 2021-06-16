@@ -1,0 +1,39 @@
+#bt-completed {
+  font-size: 16px;
+  font-weight: 500;
+  color: #50d1aa;
+  text-align: center;
+  width: 91px;
+  height: 26px;
+  background-color: rgba(107, 226, 190, 0.24);
+  border-radius: 30px;
+}
+#bt-pending {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffb572;
+  text-align: center;
+  width: 91px;
+  height: 26px;
+  background-color: rgba(255, 181, 114, 0.2);
+  border-radius: 30px;
+}
+#bt-preparing {
+  font-size: 16px;
+  font-weight: 500;
+  color: #9290fe;
+  text-align: center;
+  width: 91px;
+  height: 26px;
+  background-color: rgba(146, 144, 254, 0.2);
+  border-radius: 30px;
+}
+
+#user-table {
+  th {
+    background-color: #1f1d2b;
+  }
+  td {
+    background-color: #1f1d2b;
+  }
+}

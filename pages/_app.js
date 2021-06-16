@@ -6,6 +6,7 @@ import "../styles/Home.scss";
 import "../styles/HomeMenu.scss";
 import "../styles/Setting.scss";
 import "../styles/Dashboard.scss";
+import "../styles/UserTable.scss";
 
 function MyApp({ Component, pageProps }) {
   return (

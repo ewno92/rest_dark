@@ -8,6 +8,8 @@ import {
   ArrowUp,
 } from "./../components/icons/dashboardSvg";
 
+import { UserData } from "./../components/UserData";
+
 import UserTable from "../components/dashboard/UserTable";
 const Dashboard = () => {
   return (
@@ -74,7 +76,8 @@ const Dashboard = () => {
               <div className="order-container mt-2">
                 <span className="order-report text-light">
                   Order Report
-                  <UserTable />
+                  {/* {console.log(UserData)} */}
+                  <UserTable UserData={UserData} />
                 </span>
               </div>
             </Col>
