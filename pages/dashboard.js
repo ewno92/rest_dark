@@ -8,11 +8,12 @@ import {
   ArrowUp,
 } from "./../components/icons/dashboardSvg";
 
+import UserTable from "../components/dashboard/UserTable";
 const Dashboard = () => {
   return (
     <Container fluid id="dashboard">
       <Row className="w-100">
-        <Col className="main-container" md={5} lg={7}>
+        <Col className="main-container" md={7} lg={7}>
           <div className="top-container">
             <h1 className="heading">Dashboard</h1>
             <span className="time-stamp">Tuesday 2 Feb, 2021</span>
@@ -51,9 +52,9 @@ const Dashboard = () => {
                 <span className="name">Total Revenue</span>
               </div>
             </Col>
-            <Col sm={12} xl={4} className="mb-2">
-              <div className="card">
-                <div className="card-top">
+            <Col sm={12} xl={4} className="mb-2 justify-content-center">
+              <div className="card ">
+                <div className="card-top ">
                   <div className="icon-container">
                     <Customer />
                   </div>
@@ -70,7 +71,12 @@ const Dashboard = () => {
           </Row>
           <Row>
             <Col>
-              <span className="order-report text-light">Order Report</span>
+              <div className="order-container mt-2">
+                <span className="order-report text-light">
+                  Order Report
+                  <UserTable />
+                </span>
+              </div>
             </Col>
           </Row>
         </Col>
