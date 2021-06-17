@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Container, Nav } from "react-bootstrap";
+import { Row, Col, Container, Nav, Button } from "react-bootstrap";
 import {
   Coin,
   Order,
@@ -73,21 +73,41 @@ const Dashboard = () => {
           </Row>
           <Row>
             <Col>
-              <div className="order-container mt-2">
-                <span className="order-report text-light">
+              <div className="order-report-container mt-2">
+                <span className="order-report fs-4 ">
                   Order Report
                   {/* {console.log(UserData)} */}
-                  <UserTable UserData={UserData} />
                 </span>
+                <UserTable UserData={UserData} />
               </div>
             </Col>
           </Row>
         </Col>
         <Col className="side-container mt-3">
-          <div>
-            <div className="most-ordered"></div>
-            <div className="most-type-ordered"></div>
+          <div className="most-ordered d-flex flex-column p-3 mb-5">
+            <div className="top-container d-flex justify-content-between ">
+              <div className="title">
+                <span className="title ">Most Ordered</span>
+              </div>
+              <div className="btn-date">
+                <span>Today</span>
+              </div>
+            </div>
+            <div className="divider mt-4"></div>
+            <div className="body-container">
+              <div className="menu-item">
+                <div className="photo"></div>
+                <div className="item-description">
+                  <span className="menu-name">
+                    Spicy seasoned seafood noodles
+                  </span>
+                  <span className="menu-quantity"> 200 dishes ordered</span>
+                </div>
+              </div>
+            </div>
+            <Button className="btn">View All</Button>
           </div>
+          <div className="most-type-ordered"></div>
         </Col>
       </Row>
     </Container>
