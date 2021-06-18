@@ -156,6 +156,7 @@ const Dashboard = () => {
                 <span>Today</span>
               </div>
             </div>
+            <div className="divider"></div>
             <img style={{ width: "100%" }} src="Chart.png" alt="chart" />
           </div>
         </Col>
