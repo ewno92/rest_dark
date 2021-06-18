@@ -1,0 +1,58 @@
+#chart {
+  color: white;
+
+  //   height: 300px;
+  .svg-container {
+    // background: yellow;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    transform: rotate(0.75turn);
+    // justify-content: center;
+    // align-items: center;
+    svg circle {
+      width: 200px;
+      width: 200px;
+      fill: none;
+      stroke-width: 20.3;
+      // stroke: #000;
+      //   transform: translate(10px, 100px);
+      // stroke-dasharray: 440;
+      stroke-linecap: round;
+    }
+    svg circle:nth-child(1) {
+      //background
+      stroke-dasharray: 880;
+      stroke: #2f3f5a;
+    }
+    svg circle:nth-child(2) {
+      stroke-dasharray: 880;
+      // stroke-dashoffset: calc(880 - (880 * 10) / 100);
+      stroke: #65b0f6;
+      transition: width 2s linear 1s;
+    }
+    svg circle:nth-child(3) {
+      //background
+      stroke-dasharray: 754;
+      stroke: #1f1d2b;
+    }
+    svg circle:nth-child(4) {
+      stroke-dasharray: 754;
+      stroke-dashoffset: calc(754 - (754 * 80) / 100);
+      stroke: #ffb572;
+    }
+    svg circle:nth-child(5) {
+      stroke-dasharray: 629;
+      stroke: #2f3f5a;
+    }
+    svg circle:nth-child(6) {
+      stroke-dasharray: 629;
+      stroke-dashoffset: calc(629 - (629 * 30) / 100);
+      stroke: #ff7ca3;
+    }
+    svg circle:nth-child(7) {
+      stroke-dasharray: 500;
+      stroke: #1f1d2b;
+    }
+  }
+}

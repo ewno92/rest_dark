@@ -13,6 +13,7 @@ import {
 import { UserData } from "./../components/UserData";
 
 import UserTable from "../components/dashboard/UserTable";
+import Chart from "../components/dashboard/Chart";
 const Dashboard = () => {
   // const Chart = require("../components/dashboard/Chart.png");
   return (
@@ -158,6 +159,7 @@ const Dashboard = () => {
             </div>
             <div className="divider"></div>
             <img style={{ width: "100%" }} src="Chart.png" alt="chart" />
+            <Chart />
           </div>
         </Col>
       </Row>
