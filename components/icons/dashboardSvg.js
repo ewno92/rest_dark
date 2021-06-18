@@ -1,5 +1,4 @@
 import React from "react";
-
 export const Coin = () => (
   <svg
     width="24"

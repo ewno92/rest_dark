@@ -8,12 +8,13 @@ import {
   ArrowUp,
   DropDownArrow,
 } from "./../components/icons/dashboardSvg";
-import Chart from "./../components/dashboard/Chart.png";
+// import chart from "./../components/dashboard/Chart.png";
 
 import { UserData } from "./../components/UserData";
 
 import UserTable from "../components/dashboard/UserTable";
 const Dashboard = () => {
+  // const Chart = require("../components/dashboard/Chart.png");
   return (
     <Container fluid id="dashboard">
       <Row className="w-100">
@@ -153,9 +154,9 @@ const Dashboard = () => {
                   <DropDownArrow />
                 </div>
                 <span>Today</span>
-                {Chart}
               </div>
             </div>
+            <img style={{ width: "100%" }} src="Chart.png" alt="chart" />
           </div>
         </Col>
       </Row>
