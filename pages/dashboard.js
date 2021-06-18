@@ -6,7 +6,9 @@ import {
   Customer,
   ArrowDown,
   ArrowUp,
+  DropDownArrow,
 } from "./../components/icons/dashboardSvg";
+import Chart from "./../components/dashboard/Chart.png";
 
 import { UserData } from "./../components/UserData";
 
@@ -84,20 +86,55 @@ const Dashboard = () => {
           </Row>
         </Col>
         <Col className="side-container mt-3">
-          <div className="most-ordered d-flex flex-column p-3 mb-5">
-            <div className="top-container d-flex justify-content-between ">
-              <div className="title">
-                <span className="title ">Most Ordered</span>
-              </div>
-              <div className="btn-date">
+          <div className="most-ordered d-flex flex-column mb-5">
+            <div className="top-container d-flex justify-content-between">
+              <span className="title ">Most Ordered</span>
+
+              <div className="btn-date d-flex align-items-center justify-content-center">
+                <div className="drop-icon">
+                  <DropDownArrow />
+                </div>
                 <span>Today</span>
               </div>
             </div>
-            <div className="divider mt-4"></div>
+            <div className="divider"></div>
             <div className="body-container">
-              <div className="menu-item">
-                <div className="photo"></div>
-                <div className="item-description">
+              <div className="menu-item d-flex">
+                <div className="photo">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375__340.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="item-description d-flex flex-column just">
+                  <span className="menu-name">
+                    Spicy seasoned seafood noodles
+                  </span>
+                  <span className="menu-quantity"> 200 dishes ordered</span>
+                </div>
+              </div>
+              <div className="menu-item d-flex">
+                <div className="photo">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375__340.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="item-description d-flex flex-column just">
+                  <span className="menu-name">
+                    Spicy seasoned seafood noodles
+                  </span>
+                  <span className="menu-quantity"> 200 dishes ordered</span>
+                </div>
+              </div>
+              <div className="menu-item d-flex">
+                <div className="photo">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375__340.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="item-description d-flex flex-column just">
                   <span className="menu-name">
                     Spicy seasoned seafood noodles
                   </span>
@@ -107,7 +144,19 @@ const Dashboard = () => {
             </div>
             <Button className="btn">View All</Button>
           </div>
-          <div className="most-type-ordered"></div>
+          <div className="most-type-of-order d-flex flex-column mb-5">
+            <div className="top-container d-flex justify-content-between">
+              <span className="title ">Most Type of Order</span>
+
+              <div className="btn-date d-flex align-items-center justify-content-center">
+                <div className="drop-icon">
+                  <DropDownArrow />
+                </div>
+                <span>Today</span>
+                {Chart}
+              </div>
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
