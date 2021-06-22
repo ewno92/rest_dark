@@ -20,13 +20,11 @@ const Sidebar = () => {
   return (
     <nav id="sidebar">
       <div className="icon-container">
+        <div className="restaurant-container">
+          <Restaurant />
+        </div>
         <Link href="/">
           <div className={`icon ${path === "/" ? "active" : ""}`}>
-            <Restaurant />
-          </div>
-        </Link>
-        <Link href="/home">
-          <div className={`icon ${path === "/home" ? "active" : ""}`}>
             <Home />
           </div>
         </Link>

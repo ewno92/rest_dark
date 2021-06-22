@@ -16,6 +16,24 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    .restaurant-container {
+      width: 56px;
+      height: 56px;
+      background: #543c3c;
+      // opacity: 0.26;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      transition: 0.3s;
+      svg {
+        // fill: #ea6969;
+        position: absolute;
+        opacity: 1 !important;
+        width: 36px;
+        height: 36px;
+      }
+    }
     .icon {
       width: 56px;
       height: 56px;

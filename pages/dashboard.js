@@ -17,16 +17,24 @@ import Chart from "../components/dashboard/Chart";
 const Dashboard = () => {
   // const Chart = require("../components/dashboard/Chart.png");
   return (
-    <Container fluid id="dashboard">
+    <Container
+      fluid
+      id="dashboard"
+      className="pt-3 d-flex justify-content-center"
+      // className="pt-3"
+    >
       <Row className="w-100">
         <Col className="main-container" md={7} lg={7}>
-          <div className="top-container">
-            <h1 className="heading">Dashboard</h1>
-            <span className="time-stamp">Tuesday 2 Feb, 2021</span>
-          </div>
+          <Row>
+            <Col className="top-container m-0 mb-3 p-3">
+              <h1 className="heading">Dashboard</h1>
+              <span className="time-stamp">Tuesday 2 Feb, 2021</span>
+              <Col className="divider mt-4"></Col>
+            </Col>
+          </Row>
 
           <Row className="summary-container">
-            <Col sm={12} xl={4} className="mb-2">
+            <Col sm={12} xl={4} className="mb-2 ">
               <div className="card">
                 <div className="card-top">
                   <div className="icon-container">
@@ -38,7 +46,7 @@ const Dashboard = () => {
                   </div>
                 </div>
 
-                <span className="number">$10,243.000</span>
+                <span className="number">$10,243.00</span>
                 <span className="name">Total Revenue</span>
               </div>
             </Col>
@@ -54,7 +62,7 @@ const Dashboard = () => {
                   </div>
                 </div>
 
-                <span className="number">$10,243.000</span>
+                <span className="number">$8,793.00</span>
                 <span className="name">Total Revenue</span>
               </div>
             </Col>
@@ -75,22 +83,20 @@ const Dashboard = () => {
               </div>
             </Col>
           </Row>
-          <Row>
-            <Col>
-              <div className="order-report-container mt-2">
-                <span className="order-report fs-4 ">
-                  Order Report
-                  {/* {console.log(UserData)} */}
-                </span>
-                <UserTable UserData={UserData} />
-              </div>
+          <Row className="m-0">
+            <Col className="order-report-container mt-2">
+              <span className="order-report fs-4 my-2">
+                Order Report
+                {/* {console.log(UserData)} */}
+              </span>
+              <UserTable UserData={UserData} />
             </Col>
           </Row>
         </Col>
-        <Col className="side-container mt-3">
-          <div className="most-ordered d-flex flex-column mb-5">
-            <div className="top-container d-flex justify-content-between">
-              <span className="title ">Most Ordered</span>
+        <Col className="side-container mx-0 mt-3" md={5} lg={5}>
+          <Row className="most-ordered d-flex flex-column m-0 mb-5 p-3">
+            <Col className="top-container d-flex justify-content-between align-items-center mb-3">
+              <span className="title">Most Ordered</span>
 
               <div className="btn-date d-flex align-items-center justify-content-center">
                 <div className="drop-icon">
@@ -98,10 +104,10 @@ const Dashboard = () => {
                 </div>
                 <span>Today</span>
               </div>
-            </div>
-            <div className="divider"></div>
-            <div className="body-container">
-              <div className="menu-item d-flex">
+            </Col>
+            <div className="divider w-100 mb-3"></div>
+            <Row className="body-container d-flex flex-column">
+              <Col className="menu-item d-flex">
                 <div className="photo">
                   <img
                     src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375__340.jpg"
@@ -114,8 +120,8 @@ const Dashboard = () => {
                   </span>
                   <span className="menu-quantity"> 200 dishes ordered</span>
                 </div>
-              </div>
-              <div className="menu-item d-flex">
+              </Col>
+              <Col className="menu-item d-flex">
                 <div className="photo">
                   <img
                     src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375__340.jpg"
@@ -128,8 +134,8 @@ const Dashboard = () => {
                   </span>
                   <span className="menu-quantity"> 200 dishes ordered</span>
                 </div>
-              </div>
-              <div className="menu-item d-flex">
+              </Col>
+              <Col className="menu-item d-flex">
                 <div className="photo">
                   <img
                     src="https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375__340.jpg"
@@ -142,25 +148,33 @@ const Dashboard = () => {
                   </span>
                   <span className="menu-quantity"> 200 dishes ordered</span>
                 </div>
-              </div>
-            </div>
+              </Col>
+            </Row>
             <Button className="btn">View All</Button>
-          </div>
-          <div className="most-type-of-order d-flex flex-column mb-5">
-            <div className="top-container d-flex justify-content-between">
-              <span className="title ">Most Type of Order</span>
+          </Row>
+          <Row className="most-type-of-order d-flex flex-column m-0 mb-5 p-3">
+            <Row className="m-0 p-0">
+              <Col className="top-container d-flex justify-content-between p-0">
+                <span className="title ">Most Type of Order</span>
 
-              <div className="btn-date d-flex align-items-center justify-content-center">
-                <div className="drop-icon">
-                  <DropDownArrow />
+                <div className="btn-date d-flex align-items-center justify-content-center">
+                  <div className="drop-icon">
+                    <DropDownArrow />
+                  </div>
+                  <span>Today</span>
                 </div>
-                <span>Today</span>
-              </div>
-            </div>
-            <div className="divider"></div>
-            <img style={{ width: "100%" }} src="Chart.png" alt="chart" />
-            <Chart />
-          </div>
+              </Col>
+            </Row>
+            <Row className="m-0 p-0">
+              <div className="divider my-3"></div>
+            </Row>
+            {/* <img style={{ width: "100%" }} src="Chart.png" alt="chart" /> */}
+            <Row className="m-0 p-0">
+              <Col className="w-100 p-0 m-0">
+                <Chart />
+              </Col>
+            </Row>
+          </Row>
         </Col>
       </Row>
     </Container>

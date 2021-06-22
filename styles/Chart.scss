@@ -1,10 +1,11 @@
 #chart {
-  color: white;
+  // color: white;
+  // background: rgb(80, 74, 74);
+  // background: yellow;
 
-  //   height: 300px;
   .svg-container {
     // background: yellow;
-    display: flex;
+    // display: flex;
     width: 300px;
     height: 300px;
     transform: rotate(0.75turn);
@@ -23,36 +24,93 @@
     svg circle:nth-child(1) {
       //background
       stroke-dasharray: 880;
-      stroke: #2f3f5a;
+      stroke: #353340;
     }
     svg circle:nth-child(2) {
       stroke-dasharray: 880;
       // stroke-dashoffset: calc(880 - (880 * 10) / 100);
       stroke: #65b0f6;
-      transition: width 2s linear 1s;
+      animation: first-circle 2s linear;
+    }
+    @keyframes first-circle {
+      0% {
+        // transform: rotate(190deg);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translatex(0);
+        opacity: 1;
+      }
     }
     svg circle:nth-child(3) {
       //background
       stroke-dasharray: 754;
-      stroke: #1f1d2b;
+      stroke: #2a2936;
     }
     svg circle:nth-child(4) {
       stroke-dasharray: 754;
       stroke-dashoffset: calc(754 - (754 * 80) / 100);
       stroke: #ffb572;
+      animation: second-circle 2s linear;
+    }
+    @keyframes second-circle {
+      0% {
+        // transform: rotate(190deg);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translatex(0);
+        opacity: 1;
+      }
     }
     svg circle:nth-child(5) {
       stroke-dasharray: 629;
-      stroke: #2f3f5a;
+      stroke: #353340;
     }
     svg circle:nth-child(6) {
       stroke-dasharray: 629;
       stroke-dashoffset: calc(629 - (629 * 30) / 100);
       stroke: #ff7ca3;
+      animation: second-circle 2s linear;
+    }
+    @keyframes third-circle {
+      0% {
+        // transform: rotate(190deg);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translatex(0);
+        opacity: 1;
+      }
     }
     svg circle:nth-child(7) {
       stroke-dasharray: 500;
-      stroke: #1f1d2b;
+      stroke: #2a2936;
+    }
+  }
+  .info-container {
+    min-width: 150px;
+    // width: 100%;
+    .dine-color {
+      background: #ff7ca3;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    .togo-color {
+      background: #ffb572;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    .delivery-color {
+      background: #65b0f6;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
     }
   }
 }
