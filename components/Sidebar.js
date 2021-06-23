@@ -10,7 +10,7 @@ import {
   Notification,
   Setting,
   LogOut,
-} from "./../components/icons/svgs";
+} from "./icons/sidebarSvgs";
 
 const Sidebar = () => {
   const router = useRouter();

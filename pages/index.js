@@ -8,12 +8,13 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import { hotDish, coldDish } from "./../components/data";
 import { Col, Container, Row } from "react-bootstrap";
+
 export default function Home() {
   return (
     <Container fluid id="home">
       <div className="header">
         <div className="name-time-container">
-          <h1 className="name">JaeGar Resto</h1>
+          <h1 className="name">My Rest</h1>
           <span className="time-stamp">Tuesday, 2 Feb 2021</span>
         </div>
         <div className="search-container">

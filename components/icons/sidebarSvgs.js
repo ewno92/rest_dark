@@ -21,8 +21,8 @@ export const Restaurant = () => (
         y2="32"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#EA9769" />
-        <stop offset="1" stop-color="#EA6969" />
+        <stop stopColor="#EA9769" />
+        <stop offset="1" stopColor="#EA6969" />
       </linearGradient>
     </defs>
   </svg>
