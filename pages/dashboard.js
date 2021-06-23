@@ -34,7 +34,7 @@ const Dashboard = () => {
           </Row>
 
           <Row className="summary-container">
-            <Col sm={12} xl={4} className="mb-2 ">
+            <Col sm={12} xl={4} className="mb-2">
               <div className="card">
                 <div className="card-top">
                   <div className="icon-container">

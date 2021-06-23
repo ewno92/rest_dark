@@ -1,4 +1,5 @@
 #settings {
+  // box-sizing: border-box;
   background-color: #252836;
   // background-color: white;
   height: 100vh;
@@ -14,6 +15,19 @@
     border-radius: 8px;
     background-color: #1f1d2b;
     // margin-right: 10px;
+    .tab-menu {
+      .text-container {
+        .title {
+          font-size: 16px;
+          color: #fff;
+          margin: 0;
+        }
+      }
+      .description {
+        font-size: 14px;
+        color: #abbbc2;
+      }
+    }
   }
 
   .tab-content {
