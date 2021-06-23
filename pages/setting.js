@@ -29,7 +29,17 @@ const Settings = () => {
                   <Nav variant="pills" className="flex-column">
                     <Nav.Item>
                       <Nav.Link eventKey="first">
-                        <Heart /> &nbsp; Appearance
+                        <div className="tab-menu d-flex">
+                          <div className="icon-container">
+                            <Heart />
+                          </div>
+                          <div className="text-container px-3">
+                            <h5 className="title">Appearance</h5>
+                            <span className="description">
+                              Dark and Light mode, Font size
+                            </span>
+                          </div>
+                        </div>
                       </Nav.Link>
                     </Nav.Item>
 
@@ -42,7 +52,7 @@ const Settings = () => {
                           <div className="text-container px-3">
                             <h5 className="title">Your Restaurant</h5>
                             <span className="description">
-                              Manage Your Product, pricing, etc
+                              Dark and Light mode, Font size
                             </span>
                           </div>
                         </div>
@@ -50,32 +60,77 @@ const Settings = () => {
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">
-                        <ProductManagement />
-                        &nbsp; Products Management
+                        <div className="tab-menu d-flex">
+                          <div className="icon-container">
+                            <ProductManagement />
+                          </div>
+                          <div className="text-container px-3">
+                            <h5 className="title">Products Management</h5>
+                            <span className="description">
+                              Manage your product, pricing, etc
+                            </span>
+                          </div>
+                        </div>
                       </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="fourth">
-                        <Notification />
-                        &nbsp; Notification
+                        <div className="tab-menu d-flex">
+                          <div className="icon-container">
+                            <Notification />
+                          </div>
+                          <div className="text-container px-3">
+                            <h5 className="title">Notifications</h5>
+                            <span className="description">
+                              Customize your notifications
+                            </span>
+                          </div>
+                        </div>
                       </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="fifth">
-                        <Security />
-                        &nbsp; Security
+                        <div className="tab-menu d-flex">
+                          <div className="icon-container">
+                            <Security />
+                          </div>
+                          <div className="text-container px-3">
+                            <h5 className="title">Security</h5>
+                            <span className="description">
+                              Configure Pasword, PIN, etc
+                            </span>
+                          </div>
+                        </div>
                       </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="sixth">
-                        <Security />
-                        &nbsp; Security
+                        <div className="tab-menu d-flex">
+                          <div className="icon-container">
+                            <Security />
+                          </div>
+                          <div className="text-container px-3">
+                            <h5 className="title">Security</h5>
+                            <span className="description">
+                              Configure Pasword, PIN, etc
+                            </span>
+                          </div>
+                        </div>
                       </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="seventh">
-                        <AboutUs />
-                        &nbsp; About Us
+                        <div className="tab-menu d-flex">
+                          <div className="icon-container">
+                            <AboutUs />
+                          </div>
+                          <div className="text-container px-3">
+                            <h5 className="title">About Us</h5>
+                            <span className="description">
+                              Find out more about us
+                            </span>
+                          </div>
+                        </div>
                       </Nav.Link>
                     </Nav.Item>
                   </Nav>
