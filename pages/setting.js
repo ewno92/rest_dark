@@ -1,7 +1,7 @@
 import React from "react";
 // import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import { Row, Col, Nav, Container } from "react-bootstrap";
+import { Row, Col, Nav, Container, Tabs } from "react-bootstrap";
 import {
   Heart,
   Restaurant,
@@ -59,7 +59,7 @@ const Settings = () => {
                       </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">
+                      <Nav.Link eventKey="ProductManagement">
                         <div className="tab-menu d-flex">
                           <div className="icon-container">
                             <ProductManagement />
@@ -146,8 +146,9 @@ const Settings = () => {
                     <Tab.Pane eventKey="second">
                       <h2>tab2</h2>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <h2>three</h2>
+                    <Tab.Pane eventKey="ProductManagement">
+                      {/* Product Management */}
+                      <div>product</div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="fourth">
                       <h2>four</h2>
