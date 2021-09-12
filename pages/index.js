@@ -37,7 +37,7 @@ export default function Home() {
               availability={9}
               img="https://cdn.pixabay.com/photo/2017/01/07/20/40/candies-1961536_960_720.jpg"
             /> */}
-            <Row className="item-container">
+            <Row className="item-container flex justify-content-center">
               {hotDish.map((item, i) => (
                 <HomeMenu
                   first={item.first}
@@ -51,7 +51,7 @@ export default function Home() {
             </Row>
           </Tab>
           <Tab eventKey="Cold Dishes" title="Cold Dishes">
-            <Row className="item-container">
+            <Row className="item-container flex justify-content-center">
               {coldDish.map((item, i) => (
                 <HomeMenu
                   first={item.first}
